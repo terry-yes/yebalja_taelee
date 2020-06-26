@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  //form (action="http://localhost:3000/" method="post")
+  //  p
+  //    input (type="text" name="program" placeholder="프로그램명")
+    //input (type="submit value="Add)
+
+  table
+    tr
+    -for (let key in db[0])
+      th #{key}
+    each row in db
+      tr
+      each val in row
+        td #{val}
+
